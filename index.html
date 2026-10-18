@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="Map of upcoming and recently launched residential projects in Kuala Lumpur and Selangor. Facts from public sources." />
+    <meta name="robots" content="noindex" />
+    <title>KL & Selangor New Launch Map (Preview)</title>
+    <script>
+      // Set the theme before first paint (src/theme.ts takes over after load).
+      try {
+        var t = localStorage.getItem("pm-theme");
+        if (t !== "dark" && t !== "light") t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="/property-map-preview/assets/index-BjauxSRN.js"></script>
+    <link rel="stylesheet" crossorigin href="/property-map-preview/assets/index-D6yPQMFu.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
